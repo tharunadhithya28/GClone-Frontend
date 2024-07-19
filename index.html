@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone</title>
+    <link rel="stylesheet" href="../frontend/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Google Keep Clone</h1>
+            <div id="authContainer">
+                <button id="loginButton">Login</button>
+                <button id="registerButton">Register</button>
+                <button id="logoutButton" style="display: none;">Logout</button>
+                <button id="archiveButton"> Archived </button>
+            </div>
+        </header>
+        <main>
+            <div id="noteInputContainer" style="display: none; display: flex; align-items: center; gap: 15px;">
+                <textarea id="noteTitle" placeholder="Title"></textarea>
+                <textarea id="noteContent" placeholder="Take a note..."></textarea>
+                <input id="noteTags" placeholder="Tags (comma-separated)">
+                <button id="addNoteButton">Add Note</button>
+            </div>
+            <div id="notesContainer"></div>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="authForm">
+                <input type="text" id="authName" placeholder="Name" style="display: none;">
+                <input type="email" id="authEmail" placeholder="Email">
+                <input type="password" id="authPassword" placeholder="Password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="../frontend/script.js"></script>
+</body>
+</html>
