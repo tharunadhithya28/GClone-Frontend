@@ -1,12 +1,20 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./*.html",
+    "build": "parcel build ./*.html",
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "build": "^0.1.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "description": ""
 }
